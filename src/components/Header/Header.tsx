@@ -38,10 +38,10 @@ export const Header = (
       ) => {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           updateData(results);
-          history.push("PlaceMenu");
+          history.push("/PlaceMenu");
         } else {
           updateData(results);
-          history.push("PlaceMenu");
+          history.push("/PlaceMenu");
         }
       }
     );
@@ -61,11 +61,11 @@ export const Header = (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className={"ml-2"} style={{ height: 150 }}>
         <Nav className="justify-content-start flex-fill">
-          <Nav.Link onClick={() => history.push("Home")}>Home</Nav.Link>
-          <Nav.Link onClick={() => history.push("PlaceMenu")}>
+          <Nav.Link onClick={() => history.push("/Home")}>Home</Nav.Link>
+          <Nav.Link onClick={() => history.push("/PlaceMenu")}>
             PlaceMenu
           </Nav.Link>
-          <Nav.Link onClick={() => history.push("Contact")}>Contact</Nav.Link>
+          <Nav.Link onClick={() => history.push("/Contact")}>Contact</Nav.Link>
         </Nav>
         <Nav className="align-self-end mt-2">
           <div>
