@@ -92,36 +92,5 @@ export const Header = (
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    // <Navbar>
-    //   <Navbar.Brand href="#home">
-    //     <Image src={logoImage} className="img" />
-    //   </Navbar.Brand>
-    //   <Nav className="mr-auto">
-    //     <Nav.Link onClick={() => history.push("/")}>Home</Nav.Link>
-    //     <Nav.Link onClick={() => history.push("/PlaceMenu")}>
-    //       Place Menu
-    //     </Nav.Link>
-    //     <Nav.Link onClick={() => history.push("/Contact")}>Contact</Nav.Link>
-    //     <Form.Text className="search-title">Search</Form.Text>
-    //     <InputGroup>
-    //       <FormControl
-    //         id="query-search"
-    //         value={query}
-    //         onChange={handleChange}
-    //         onKeyPress={handleKeyPress}
-    //         className="search-text"
-    //         type="text"
-    //         placeholder="Search"
-    //       />
-    //       <InputGroup.Append>
-    //         <FontAwesomeIcon
-    //           className="search-icon"
-    //           icon={faSearch}
-    //           flip={"horizontal"}
-    //         />
-    //       </InputGroup.Append>
-    //     </InputGroup>
-    //   </Nav>
-    // </Navbar>
   );
 };
