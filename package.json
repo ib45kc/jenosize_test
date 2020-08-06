@@ -9,7 +9,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
     "@types/react-bootstrap": "^1.0.1",
     "bootstrap": "^4.5.0",
     "easy-peasy": "^3.3.1",
@@ -25,8 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,10 +43,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
     "@types/googlemaps": "^3.39.11",
+    "@types/jest": "^26.0.9",
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
     "@types/react-places-autocomplete": "^7.2.6",
-    "@types/react-router-dom": "^5.1.5"
+    "@types/react-router-dom": "^5.1.5",
+    "jest": "^26.2.2",
+    "ts-jest": "^26.1.4"
   }
 }
