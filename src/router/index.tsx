@@ -7,9 +7,9 @@ import { Contact } from "../pages/Contact";
 export const AppRouter = () => {
   return (
     <Switch>
-      <Route path="/Home" component={Main} />
-      <Route path="/PlaceMenu" component={PlaceMenu} />
-      <Route path="/Contact" component={Contact} />
+      <Route exact path="/Home" component={Main} />
+      <Route exact path="/PlaceMenu" component={PlaceMenu} />
+      <Route exact path="/Contact" component={Contact} />
       <Route render={() => <Redirect to="/Home" />} />
     </Switch>
   );
