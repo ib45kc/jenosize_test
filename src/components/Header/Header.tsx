@@ -28,7 +28,7 @@ export const Header = (
     var service = new google.maps.places.PlacesService(map);
     const request = {
       query: query,
-      type: "food",
+      type: "restaurant",
     };
     service.textSearch(
       request,
