@@ -39,6 +39,9 @@ export const Header = (
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           updateData(results);
           history.push("PlaceMenu");
+        } else {
+          updateData(results);
+          history.push("PlaceMenu");
         }
       }
     );
